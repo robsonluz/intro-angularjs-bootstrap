@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="appSoma">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lista</title>
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<!-- AngularJS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script> 
+
+    <script src="js/app-soma.js"></script>           
+</head>
+<body>
+
+	<div class="container" ng-controller="CalculadoraController as calculadoraController">
+        
+        <div>Resultado: {{calculadoraController.resultado}}</div>
+
+		<input type="text" ng-model="calculadoraController.numero1" 
+			placeholder="Número 1" class="form-control"/>
+        <input type="text" ng-model="calculadoraController.numero2"  
+        	placeholder="Número 2" class="form-control"/>
+		
+		<button class="btn btn-primary" ng-click="calculadoraController.somar()">
+            Somar
+        </button>
+          
+    </div>
+   
+</body>
+</html>
+
+
+
+
+
+
+
+
+
