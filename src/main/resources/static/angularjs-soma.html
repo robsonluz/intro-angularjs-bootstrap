@@ -15,14 +15,14 @@
 
 	<div class="container" ng-controller="CalculadoraController as calculadoraController">
         
-        <div>Resultado: {{calculadoraController.resultado}}</div>
+        <div>Resultado: {{resultado}}</div>
 
-		<input type="text" ng-model="calculadoraController.numero1" 
+		<input type="text" ng-model="numero1" 
 			placeholder="Número 1" class="form-control"/>
-        <input type="text" ng-model="calculadoraController.numero2"  
+        <input type="text" ng-model="numero2"  
         	placeholder="Número 2" class="form-control"/>
 		
-		<button class="btn btn-primary" ng-click="calculadoraController.somar()">
+		<button class="btn btn-primary" ng-click="somar()">
             Somar
         </button>
           

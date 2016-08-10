@@ -1,13 +1,13 @@
 var appSoma = angular.module('appSoma', []);
 
-appSoma.controller('CalculadoraController', function(){
+appSoma.controller('CalculadoraController', function($scope){
 
-	this.resultado = 0;
-	this.numero1 = "";
-	this.numero2 = "";
+	$scope.resultado = 0;
+	$scope.numero1 = "";
+	$scope.numero2 = "";
 
-	this.somar = function() {
-		this.resultado = parseInt(this.numero1) + parseInt(this.numero2);
+	$scope.somar = function() {
+		$scope.resultado = parseInt($scope.numero1) + parseInt($scope.numero2);
 	}
 	
 });

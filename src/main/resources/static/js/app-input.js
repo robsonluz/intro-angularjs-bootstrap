@@ -2,9 +2,9 @@ var appInput = angular.module('appInput', []);
 
 appInput.controller('MainController', function(){
 
-	this.nome = "Nome Inicial";
+	$scope.nome = "Nome Inicial";
 
-	this.mostrarMensagem = function() {
+	$scope.mostrarMensagem = function() {
 		alert('Seu nome: ' + this.nome);
 	}
 	
